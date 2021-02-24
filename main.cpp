@@ -14,7 +14,9 @@ int main() {
 
     encrypt(input, strlen(input), res, &k);
     decrypt(res, k, de, k);
+
     bool cmpRes = cmp(res, k, input2, strlen(input2));
     std::cout << cmpRes << "\n";
+
     return 0;
 }
